@@ -9,7 +9,14 @@ let cities = [
 ];
 
 for (let i = 0; i < cities.lenght; i++){
+
   let input = cities[i];
-  let lower = input.loLowerCase();
-  
+  let lower = input.toLowerCase();
+  let firstLetter = lower.slice(0,1);
+  let capitalized = lower.replace(firstLetter, firstLetter.toUpperCase());
+  let result = capitalized;
+  let listItem = document.createElement('li');
+  listItem.textContent = result; 
+  list.appendChild(listItem);
+
 }
