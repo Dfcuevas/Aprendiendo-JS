@@ -1,20 +1,15 @@
-var list = document.querySelector('.output ul');
+let list = document.querySelector('.output ul');
 list.innerHTML = '';
 
-var cities = [
-  'nonDon',
+let cities = [
+  'lonDon',
   'ManCHESTer',
   'BiRmiNGHAM',
   'liVERpoOL'
-]
+];
 
-for (var i = 0; i < cities.length; i++) {
-  var input = cities[i];
-  var minusculas = input.toLowerCase();
-  var primeraLetra = minusculas.slice(0,1);
-  var mayusculas = minusculas.replace(primeraLetra, primeraLetra.toUpperCase());
-  listItem = document.createElement('li');
-  listItem.textContent = mayusculas;
-  list.appendChild(listItem);
-
+for (let i = 0; i < cities.lenght; i++){
+  let input = cities[i];
+  let lower = input.loLowerCase();
+  
 }

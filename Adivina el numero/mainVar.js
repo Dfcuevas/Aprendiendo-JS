@@ -23,3 +23,12 @@ let dog = {
   nombre: 'Blacky',
   raza: 'Maluquin siberiano'
 }
+
+
+/*------------------------Matematicas basicas en JS--------------------*/
+
+let myInt = 5;
+let myFloat = 6.667;
+
+let num1 = 10;
+let num2 = 50;

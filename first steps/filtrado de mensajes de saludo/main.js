@@ -1,24 +1,19 @@
-var list = document.querySelector('.output ul');
-
+let list = document.querySelector('.output ul');
 list.innerHTML = '';
 
-var greetings = [
-  'Happy Birthday!',
+let greetings = [
+  'Happy Birthday',
   'Merry Christmas my love',
   'A happy Christmas to all the family',
   'You\'re all I want for Christmas',
-  'Get well son'
+  'Get well soon'
 ];
 
-
-
-for (var i = 0; i < greetings.length; i++) {
-
-  var input = greetings[i];
-
-  if(greetings[i].indexOf('Christmas') !== -1) {
-    var result = input;
-    var listItem = document.createElement('li');
+for (let i = 0; i < greetings.length; i++) {
+  let input = greetings[i];
+  if (greetings[i].indexOf('Christmas') !== -1) {
+    let result = input;
+    let listItem = document.createElement('li');
     listItem.textContent = result;
     list.appendChild(listItem);
   }

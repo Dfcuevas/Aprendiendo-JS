@@ -1,0 +1,11 @@
+.maquinaContenedor {
+  width: 50%;
+  height: 25vh;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4%;
+}
+
+.maquinaContenedor p {
+  text-transform: uppercase;
+}
