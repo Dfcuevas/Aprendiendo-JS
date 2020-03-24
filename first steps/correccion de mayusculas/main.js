@@ -8,7 +8,7 @@ let cities = [
   'liVERpoOL'
 ];
 
-for (let i = 0; i < cities.lenght; i++){
+for (let i = 0; i < cities.length; i++){
 
   let input = cities[i];
   let lower = input.toLowerCase();
