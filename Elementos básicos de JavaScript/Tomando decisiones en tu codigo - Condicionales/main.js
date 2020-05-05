@@ -105,3 +105,36 @@ function setWeather() {
       para.textContent = '';
   }
 }
+
+/* -------------------------------------------------------------------- */
+
+//OPERADOR TERNARIO
+
+/* Hay una ultima sintaxis que queremos presentarte antes de que juegues con algunos ejemplos. El operador ternario o condicional es una pequeña sintaxis que prueba una condicion y devuelve un valor/expresion, si es true, y otro si es false--Esto puede ser util en algunas situaciones, y puede ocupar mucho menos codigo que un bloque if---else si simplemente tienes dos opciones que se eligen a traves de una condicion true/false. El pseoducodigo se ve asi */
+
+/* 
+(condicion) ? ejecuta este codigo : ejecuta este codigo en su lugar ;
+*/
+
+//Veamos un ejemplo 
+
+
+/* let isBirthday = false;
+
+let greeting = (isBirthday) ? 'Hola y feliz cumpleaños' : 'Perdon pense que su cumpleaños era hoy' ;
+
+console.log(greeting); */
+
+
+let selectColor = document.querySelector('#theme');
+let html = document.querySelector('html');
+document.body.style.padding = '10px';
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
+
+selectColor.onchange = function () {
+  (selectColor.value === 'black') ? update('black', 'white') : update('white', 'black');
+}

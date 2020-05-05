@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A simple calender</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *::after, *::before {
+      box-sizing: inherit;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 20px;
+      
+    }
+    li {
+      display: inline-block;
+      width: 24%;
+      height: 35px;
+      border: 1px ;
+      background-color: rebeccapurple;
+      margin: 2px;
+      color: white;
+      padding: 5px;
+      align-items: center;
+    }
+   
+  </style>
+</head>
+<body>
+  
+  <h2>Live output</h2>
+  <label for="calendario">Selecciona el mes:</label>
+  <select name="calendario" id="calendario">
+    <option value="Enero">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="Marzo">Marzo</option>
+    <option value="Abril">Abril</option>
+    <option value="Mayo">Mayo</option>
+    <option value="Junio">Junio</option>
+    <option value="Julio">Julio</option>
+    <option value="Agosto">Agosto</option>
+    <option value="Septiembre">Septiembre</option>
+    <option value="Octubre">Octubre</option>
+    <option value="Noviembre">Noviembre</option>
+    <option value="Diciembre">Diciembre</option>
+  </select>
+  
+  <h1></h1>
+
+  <ul></ul>
+<script src="main.js"></script>
+</body>
+</html>

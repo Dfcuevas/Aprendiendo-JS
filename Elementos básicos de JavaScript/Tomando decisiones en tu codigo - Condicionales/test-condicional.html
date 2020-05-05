@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de condicionales</title>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    body {
+      width: 70%;
+      margin: 50px auto;
+      border: 1px solid black;
+      font-family: sans-serif;
+    }
+    section {
+      padding: 15px;
+      background-color: rgb(89, 89, 202);
+    }
+    section p {
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+  <section>
+
+  </section>
+
+  <script>
+    let section = document.querySelector('section');
+    let machineActive = true;
+    let pwd = 'cheese';
+
+    let machineResult;
+    let pwdResult;
+
+    if (machineActive) {
+      machineResult = 'La maquina esta encendida';
+      (pwd === 'cheese') ? pwdResult = 'Login Successfull' : pwdResult = 'Login Unsuccessfull';
+    } else {
+      machineResult = 'La maquina esta apagada';
+    }
+
+    section.innerHTML = '';
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+    para1.textContent = pwdResult;
+    para2.textContent = machineResult;
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+</body>
+</html>
