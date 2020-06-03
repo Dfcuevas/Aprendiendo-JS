@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Moving and removing elements</title>
+  </head>
+  <body>
+    <section>
+      <img
+        src="dinosaur.png"
+        alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth."
+      />
+      <p>
+        Here we will add a link to the
+        <a href="https://www.mozilla.org/">Mozilla homepage</a>
+      </p>
+    </section>
+    <script>
+      const link = document.querySelector("a");
+      link.textContent = "Mozilla Developer Network";
+      link.href = "https://developer.mozilla.org";
+      const sect = document.querySelector('section')
+      const para = document.createElement('p')
+      para.textContent = 'Esperamos que estes disfrutando del viaje!'
+      sect.appendChild(para)
+      const text = document.createTextNode('- the premier source for web development knowledge')
+      const linkPara = document.querySelector('p')
+      linkPara.appendChild(text)
+
+      para.style.color = 'white'
+      para.style.backgroundColor = 'black'
+      para.style.padding = '10px'
+      para.style.width = '250px'
+      para.style.textAlign = 'center'
+      para.style.margin = '0 auto'
+
+      para.setAttribute('class', 'highlight')
+    </script>
+  </body>
+</html>

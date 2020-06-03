@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Simple DOM example</title>
+    <title>Moving and removing elements</title>
   </head>
   <body>
     <section>
@@ -19,6 +19,16 @@
       const link = document.querySelector("a");
       link.textContent = "Mozilla Developer Network";
       link.href = "https://developer.mozilla.org";
+      const sect = document.querySelector('section')
+      const para = document.createElement('p')
+      para.textContent = 'Esperamos que estes disfrutando del viaje!'
+      sect.appendChild(para)
+      const text = document.createTextNode('- the premier source for web development knowledge')
+      const linkPara = document.querySelector('p')
+      linkPara.appendChild(text)
+      sect.appendChild(linkPara)
+      //sect.removeChild(linkPara)
+      linkPara.remove()
     </script>
   </body>
 </html>
