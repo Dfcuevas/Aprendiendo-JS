@@ -17,4 +17,3 @@ window.onresize = function () {
   div.style.height = `${winHeight}PX`
 
 }
-
