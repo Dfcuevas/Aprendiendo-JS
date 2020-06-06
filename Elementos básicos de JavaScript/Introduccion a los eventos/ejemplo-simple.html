@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cambio de color </title>
 </head>
 <body>
   <button>Cambio de color</button>
@@ -15,11 +15,22 @@
       return Math.floor(Math.random() * (number + 1))
     }
 
-    btn.onclick = function () {
-      const rndCol = `rgb('${random(255)}, ${random(255)}, ${random(255)}')`
+ /*   btn.onclick = function () {
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`
+      document.body.style.backgroundColor = rndCol
+    }*/
 
+    /*function bgChange(){
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`
+      document.body.style.backgroundColor = rndCol
     }
 
+    btn.addEventListener('click', bgChange)*/
+
+    btn.addEventListener('click', function () {
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`
+      document.body.style.backgroundColor = rndCol
+    });
   </script>
 </body>
 </html>
